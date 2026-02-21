@@ -4,9 +4,9 @@ Este projeto apresenta a modelagem técnica completa e a implementação de scri
 
 ##  Arquitetura do Projeto
 O sistema foi projetado para garantir rastreabilidade e integridade total das informações financeiras. A arquitetura divide-se em:
-* [cite_start]**Modelagem UML:** Diagramas de Casos de Uso, Classes e Sequência que mapeiam o comportamento do software e as regras de negócio[cite: 2, 4].
-* [cite_start]**Arquitetura Relacional:** Um modelo Entidade-Relacionamento (DER) normalizado e implementado em **PostgreSQL**, utilizando chaves estrangeiras para garantir a consistência entre contas, categorias e lançamentos[cite: 4].
-* [cite_start]**Engenharia de Requisitos:** Definição rigorosa de Requisitos Funcionais (como cadastro de lançamentos e geração de dashboards) e Não Funcionais (como o uso do SGBD PostgreSQL)[cite: 1, 4].
+* **Modelagem UML:** Diagramas de Casos de Uso, Classes e Sequência que mapeiam o comportamento do software e as regras de negócio.
+* **Arquitetura Relacional:** Um modelo Entidade-Relacionamento (DER) normalizado e implementado em **PostgreSQL**, utilizando chaves estrangeiras para garantir a consistência entre contas, categorias e lançamentos.
+* **Engenharia de Requisitos:** Definição rigorosa de Requisitos Funcionais (como cadastro de lançamentos e geração de dashboards) e Não Funcionais (como o uso do SGBD PostgreSQL).
 
 ##  Diferenciais Técnicos e Fluxo de ETL
 O ponto central desta implementação é o script de automação de dados (`script_import_scv_completo.sql`), que realiza o processo de **ETL** para migração de planilhas legadas:
@@ -22,8 +22,8 @@ O ponto central desta implementação é o script de automação de dados (`scri
 * **Tipagem Dinâmica:** Uso de comandos `ALTER COLUMN` com casting direto (`TYPE INT USING ...`) para otimizar o desempenho do banco após a importação.
 
 ##  Interface e Usabilidade
-* [cite_start]**Dashboards Analíticos:** Prototipagem de visualizações com gráficos de pizza e barras para análise imediata de saldos e despesas por categoria[cite: 1, 4].
-* [cite_start]**Formulários Estruturados:** Telas de cadastro desenhadas para facilitar a entrada de dados, reduzindo a carga cognitiva do usuário[cite: 1, 4].
+* **Dashboards Analíticos:** Prototipagem de visualizações com gráficos de pizza e barras para análise imediata de saldos e despesas por categoria.
+* **Formulários Estruturados:** Telas de cadastro desenhadas para facilitar a entrada de dados, reduzindo a carga cognitiva do usuário.
 
 ---
 **Autores:** Jefherson Luiz, Matheus Artismo, Guilherme Meira, William Gomes Reis e Gabriel Salazar.
